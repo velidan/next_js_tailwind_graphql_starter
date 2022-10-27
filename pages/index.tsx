@@ -6,10 +6,7 @@ import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
-      <h1>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+    <section className="flex flex-1 bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
       <UserCard {...mockUserCardProps.base} />
     </section>
   );

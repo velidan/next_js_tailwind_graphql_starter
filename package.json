@@ -23,9 +23,14 @@
     "webpack": "^5"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
+    "i18next": "^22.0.3",
+    "i18next-browser-languagedetector": "^7.0.0",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -46,11 +51,13 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
+    "cssnano": "^5.1.13",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1",
     "eslint-plugin-storybook": "^0.6.6",
     "husky": "^8.0.1",
     "postcss": "^8.4.18",
+    "postcss-import": "^15.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "storybook-css-modules-preset": "^1.1.1",
