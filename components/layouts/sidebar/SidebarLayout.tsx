@@ -20,13 +20,13 @@ const SidebarLayout: React.FC<ISidebarLayout> = () => {
           placeholder={`${t('common.search')}...`}
         />
         <Link href="/">
-          <a>{t('home.label')}</a>
+          {t('home.label')}
         </Link>
         <Link href="/about">
-          <a>{t('about.label')}</a>
+          {t('about.label')}
         </Link>
         <Link href="/contact">
-          <a>{t('contact.label')}</a>
+          {t('contact.label')}
         </Link>
       </nav>
       <div>
