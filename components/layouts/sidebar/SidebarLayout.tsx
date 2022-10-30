@@ -7,6 +7,14 @@ const lngs: any = {
   es: { nativeName: 'Espanol' },
 };
 
+type Locales = 'es' | 'en';
+
+// TODO: Lang enum in case of bigger lang amount
+const changeLanguage = (i18n: any, locale: Locales) => {
+  window.localStorage.setItem('user_locale', locale);
+  i18n.changeLanguage(locale);
+};
+
 export interface ISidebarLayout {}
 
 const SidebarLayout: React.FC<ISidebarLayout> = () => {
@@ -33,7 +41,7 @@ const SidebarLayout: React.FC<ISidebarLayout> = () => {
                 fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal',
               }}
               type="submit"
-              onClick={() => i18n.changeLanguage(lng)}
+              onClick={() => changeLanguage(i18n, lng as Locales)}
             >
               {lngs[lng].nativeName}
             </button>
