@@ -18,7 +18,7 @@ const changeLanguage = (i18n: any, locale: Locales) => {
 export interface ISidebarLayout {}
 
 const SidebarLayout: React.FC<ISidebarLayout> = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('common');
 
   return (
     <div>

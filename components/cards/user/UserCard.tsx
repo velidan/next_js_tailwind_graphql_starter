@@ -4,7 +4,7 @@ import styles from './UserCard.module.css';
 export interface IUserCard {}
 
 const UserCard: React.FC<IUserCard> = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
   return <div className={styles.container}>{t('home.welcome')}</div>;
 };
 
