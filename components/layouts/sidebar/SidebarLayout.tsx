@@ -19,15 +19,9 @@ const SidebarLayout: React.FC<ISidebarLayout> = () => {
           className={styles.input}
           placeholder={`${t('common.search')}...`}
         />
-        <Link href="/">
-          {t('home.label')}
-        </Link>
-        <Link href="/about">
-          {t('about.label')}
-        </Link>
-        <Link href="/contact">
-          {t('contact.label')}
-        </Link>
+        <Link href="/">{t('home.label')}</Link>
+        <Link href="/about">{t('about.label')}</Link>
+        <Link href="/contact">{t('contact.label')}</Link>
       </nav>
       <div>
         <span className="isolate inline-flex rounded-md shadow-sm">
