@@ -1,26 +1,14 @@
 import * as NextImage from 'next/image';
 import { Suspense, useEffect } from 'react';
 import { I18nextProvider } from 'react-i18next';
+import { storybookGlobalTypes } from '../config/locales.config';
 import '../pages/global.css';
 
 import i18n from './i18n.storybook';
 
 // Create a global variable called locale in storybook
 // and add a dropdown in the toolbar to change your locale
-export const globalTypes = {
-  locale: {
-    name: 'Locale',
-    description: 'Internationalization locale',
-    toolbar: {
-      icon: 'globe',
-      items: [
-        { value: 'en', right: 'en', title: 'English' },
-        { value: 'es', right: 'es', title: 'Espanol' },
-      ],
-      showTitle: 'Locale',
-    },
-  },
-};
+export const globalTypes = storybookGlobalTypes;
 
 // Wrap your stories in the I18nextProvider component
 const i18nextStoryDecorator = (Story, context) => {

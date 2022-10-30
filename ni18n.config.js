@@ -1,5 +1,5 @@
-const supportedLngs = ['en', 'es'];
+import { supportedLocales } from './config/locales.config';
 export const ni18nConfig = {
-  supportedLngs,
+  supportedLngs: supportedLocales,
   ns: [],
 };
